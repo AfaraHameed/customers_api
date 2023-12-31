@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const Customer = require('../models/customers')
 const customerController = require('../controllers/customers')
 
 router.get('/',customerController.getCustomers)

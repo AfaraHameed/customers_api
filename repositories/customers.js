@@ -22,6 +22,8 @@ const createCustomer = async (customer) => {
   const newCustomer = new Customer({
     name: customer.name,
     place: customer.place,
+    hobbies:customer.hobbies,
+    address:customer.address
   });
   try {
     const savedData = await newCustomer.save();
